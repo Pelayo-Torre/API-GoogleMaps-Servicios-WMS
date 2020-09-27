@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* DISPOSICIÓN DE LOS BLOQUES EN PANTALLA */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+nav {
+    width: 100%;
+}
+
+#topDiv {
+    height: 70%;
+    width: 90%;
+    margin: 5px auto;
+}
+
+#dataDiv {
+    height: 30%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#data ul {
+    columns: 2;
+}
+
+hr.separator {
+    width: 90%;
+    border: solid 1px black;
+    background-color: black;
+}
+
+#mapsContainer {
+    height: 100%;
+    display: flex;
+}
+
+#map_frame {
+    width: 70%;
+}
+
+#streetview_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 30%;
+    margin-left: 5px;
+}
+
+/* Controles sobre el mapa */
+
+div.controls {
+    display: flex;
+}
+
+div.controls>div {
+    margin: 5px;
+    padding: 5px;
+}
+
+#gasses-control {
+    display: flex;
+    flex-direction: column;
+}
+
+#gasses-control>label {
+    margin-bottom: 0;
+}
+
+/* Helpers*/
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
